@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title" class="title">Registration Form</h1>
+        <p id="description" class="description">Please fill out this form with the required information</p>
+    </header>
+
+    <main>
+        <form id="survey-form" method="post">
+            <section class="informacoes-gerais">
+                <div>
+                    <label id="name-label" for="name">Insira o nome:<input id="name" type="text" placeholder="Nome" name="name" required></label>
+                </div>
+                <div>
+                    <label id="email-label" for="email">Insira o email:<input id="email" type="email" placeholder="Email" name="email" required></label>
+                </div>
+                <div>
+                    <label id="number-label" for="number">Insira o numero:<input id="number" type="number" placeholder="Number" min="1" max="1000" name="number"></label>
+                </div>
+                <div>
+                    <label id="dropdown-label" for="dropdown">
+                        <select id="dropdown" name="dropdown">
+                            <option value="">(select one)</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                    </label>
+                </div>
+            </section>
+            <section>
+                <label for="radio1"><input class="inline" id="radio1" type="radio" name="input-radio" value="1">Masculino</label>
+                <label for="radio2"><input class="inline" id="radio2" type="radio" name="input-radio" value="2">Feminino</label>
+            </section>
+            <section>
+                <label for="checkbox1"><input class="inline" id="checkbox1" type="checkbox" name="input-checkbox" value="1">Option 1</label>
+                <label for="checkbox2"><input class="inline" id="checkbox2" type="checkbox" name="input-checkbox" value="2">Option 2</label>
+                <label for="checkbox3"><input class="inline" id="checkbox3" type="checkbox" name="input-checkbox" value="3">Option 3</label>
+                <label for="checkbox4"><input class="inline" id="checkbox4" type="checkbox" name="input-checkbox" value="4">Option 4</label>
+            </section>
+            <section>
+                <label for="comments">Additional comments: <textarea id="comments" name="comments" rows="5" cols="50"></textarea></label>
+            </section>
+            <button id="submit" type="submit" value="Submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
